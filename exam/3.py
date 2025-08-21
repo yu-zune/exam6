@@ -22,7 +22,7 @@ driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 # 시간지연 : 1초
 time.sleep(1)
 
-# 로그인 후 첫 페이지에서 상품 **설명** 가져오기
+# 로그인 후 첫 페이지에서 상품 설명 가져오기
 t = driver.find_elements(By.CSS_SELECTOR, ".inventory_item_desc")
 
 # t: 상품 설명 배열
@@ -30,3 +30,4 @@ for i in range(len(t)):
     print(t[i].text)
 
 driver.quit()
+
